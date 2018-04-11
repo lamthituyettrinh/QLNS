@@ -63,6 +63,8 @@
     <Compile Include="Class_checker.cs" />
     <Compile Include="Class_connect.cs" />
     <Compile Include="Class_dangnhap.cs" />
+    <Compile Include="Class_NHANVIEN.cs" />
+    <Compile Include="Class_PhongBans.cs" />
     <Compile Include="DANGNHAP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +121,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TIMNHANVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TIMNHANVIEN.Designer.cs">
+      <DependentUpon>TIMNHANVIEN.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TIMNHANVIEN.resx">
+      <DependentUpon>TIMNHANVIEN.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="LQTOSQL\DataClasses_NS.dbml.layout">
       <DependentUpon>DataClasses_NS.dbml</DependentUpon>
     </None>

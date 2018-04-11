@@ -10,21 +10,22 @@ using System.Windows.Forms;
 
 namespace PhanMemQLNS
 {
-    public partial class PHONGBAN : Form
+    public partial class TIMNHANVIEN : Form
     {
-        Class_PhongBans phongban;  
-        public PHONGBAN()
+        Class_NHANVIEN nhanvien;
+        public TIMNHANVIEN()
         {
             InitializeComponent();
-            phongban = new Class_PhongBans();
-            phongban.loaddulieu(this);
+            nhanvien = new Class_NHANVIEN();
+            nhanvien.loaddulieu(this);
         }
 
         private void bt_find_Click(object sender, EventArgs e)
         {
             try
             {
-                phongban.timkiem(this);
+                nhanvien.timkiem(this);
+
             }
             catch (Exception ex)
             {

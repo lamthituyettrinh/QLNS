@@ -1,6 +1,6 @@
 ﻿namespace PhanMemQLNS
 {
-    partial class PHONGBAN
+    partial class TIMNHANVIEN
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.bt_find = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdb_theoten = new System.Windows.Forms.RadioButton();
             this.rdb_theoma = new System.Windows.Forms.RadioButton();
             this.txt_manv = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_nhanvien = new System.Windows.Forms.DataGridView();
-            this.bt_find = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nhanvien)).BeginInit();
             this.SuspendLayout();
+            // 
+            // bt_find
+            // 
+            this.bt_find.Location = new System.Drawing.Point(36, 77);
+            this.bt_find.Name = "bt_find";
+            this.bt_find.Size = new System.Drawing.Size(75, 23);
+            this.bt_find.TabIndex = 17;
+            this.bt_find.Text = "Tìm kiếm";
+            this.bt_find.UseVisualStyleBackColor = true;
+            this.bt_find.Click += new System.EventHandler(this.bt_find_Click);
             // 
             // groupBox1
             // 
@@ -46,12 +56,12 @@
             this.groupBox1.Controls.Add(this.rdb_theoma);
             this.groupBox1.Controls.Add(this.txt_manv);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(25, 12);
+            this.groupBox1.Location = new System.Drawing.Point(39, 15);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(391, 106);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.Size = new System.Drawing.Size(454, 106);
+            this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tìm kiếm phòng ban";
+            this.groupBox1.Text = "Tìm kiếm Nhân Viên";
             // 
             // rdb_theoten
             // 
@@ -86,39 +96,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 19);
+            this.label1.Location = new System.Drawing.Point(101, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Mã NV";
+            this.label1.Text = "Nhập";
             // 
             // dgv_nhanvien
             // 
             this.dgv_nhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_nhanvien.Location = new System.Drawing.Point(25, 124);
+            this.dgv_nhanvien.Location = new System.Drawing.Point(39, 127);
             this.dgv_nhanvien.Name = "dgv_nhanvien";
-            this.dgv_nhanvien.Size = new System.Drawing.Size(391, 199);
-            this.dgv_nhanvien.TabIndex = 7;
+            this.dgv_nhanvien.Size = new System.Drawing.Size(454, 199);
+            this.dgv_nhanvien.TabIndex = 9;
             // 
-            // bt_find
-            // 
-            this.bt_find.Location = new System.Drawing.Point(36, 77);
-            this.bt_find.Name = "bt_find";
-            this.bt_find.Size = new System.Drawing.Size(75, 23);
-            this.bt_find.TabIndex = 17;
-            this.bt_find.Text = "Tìm kiếm";
-            this.bt_find.UseVisualStyleBackColor = true;
-            this.bt_find.Click += new System.EventHandler(this.bt_find_Click);
-            // 
-            // PHONGBAN
+            // TIMNHANVIEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 335);
-            this.Controls.Add(this.dgv_nhanvien);
+            this.ClientSize = new System.Drawing.Size(558, 346);
             this.Controls.Add(this.groupBox1);
-            this.Name = "PHONGBAN";
-            this.Text = "PHONGBAN";
+            this.Controls.Add(this.dgv_nhanvien);
+            this.Name = "TIMNHANVIEN";
+            this.Text = "TIMNHANVIEN";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nhanvien)).EndInit();
@@ -128,12 +128,12 @@
 
         #endregion
 
+        public System.Windows.Forms.Button bt_find;
         public System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.RadioButton rdb_theoten;
         public System.Windows.Forms.RadioButton rdb_theoma;
         public System.Windows.Forms.TextBox txt_manv;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.DataGridView dgv_nhanvien;
-        public System.Windows.Forms.Button bt_find;
     }
 }
